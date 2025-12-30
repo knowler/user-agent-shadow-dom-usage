@@ -1,0 +1,25 @@
+extends /base
+
+append head
+	style: include /syntax.css
+
+block content
+	article
+		header
+			h1 #[code.element progress] element
+			p Updated #[time(datetime="2025-12-29") December 29, 2025]
+		section
+			header
+				h2 Chrome 143
+				p Updated #[time(datetime="2025-12-29") December 29, 2025]
+			pre: code.language-html: include:highlight(lang="html"):html-beautify ./chrome-143.html
+		section
+			header
+				h2 Safari 26.2
+				p Updated #[time(datetime="2025-12-29") December 29, 2025]
+			pre: code.language-html: include:highlight(lang="html"):html-beautify ./safari-26-2.html
+		section
+			header
+				h2 Firefox 146
+				p Updated #[time(datetime="2025-12-29") December 29, 2025]
+			pre: code.language-html: include:highlight(lang="html"):html-beautify ./firefox-146.html
